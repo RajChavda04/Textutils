@@ -1,0 +1,37 @@
+
+.container12{
+    width:100vw;
+    height: 80vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+ 
+    
+}
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    height: 70%;
+    background-color: aliceblue;
+    box-sizing: border-box;
+    border-radius: 10px;
+    row-gap: 10px;
+    border:2px solid aliceblue;
+    padding: 10px 20px;
+    box-shadow: 6px 4px 20px 0px;
+}
+.details1{
+    box-sizing: border-box;
+   
+}
+.details2{
+   box-sizing: border-box;
+    text-align: justify;
+    font-size: 300;
+    font-size: 1.7rem;
+    
+}

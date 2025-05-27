@@ -1,0 +1,39 @@
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color:#1C325B !important ; 
+
+}
+
+.nav-iteam{
+position: relative;
+z-index: 2;
+}
+.nav-link:hover{
+   color: rgb(216, 133, 241);
+  
+}
+.nav-link{
+    color: white;
+    font-size:18px ;
+     transition: 1s ease all 0.2;
+    
+}
+
+.navbar-brand{
+    color: white;
+    font-size: 25px;
+}
+.navbar-brand:hover{
+    color: white;
+}
+.form-check-input{
+    position: relative;
+    z-index: 10;
+  
+}
+.form-check-label{
+    position: relative;
+    z-index: 10;
+    color: white;
+}
