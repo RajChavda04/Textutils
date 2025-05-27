@@ -30,6 +30,15 @@ export default function TextArea(props) {
   let newText = text.split(/[ \t\n\r]+/).join(" ").trim();
   setText(newText);
  }
+ const copyToClipboard = () => {
+  navigator.clipboard.writeText(text)
+    .then(() => {
+      alert("Text copied to clipboard!");
+    })
+    .catch((err) => {
+      console.error("Failed to copy: ", err);
+    });
+};
   const [text, setText] = useState('');
 
   return (
@@ -44,6 +53,7 @@ export default function TextArea(props) {
       <button type="button" className="btn btn-outline-primary" onClick={UpperCase} >Uppercase</button>
       <button type="button" className="btn btn-outline-primary"onClick={LowerCase}>Lowercase</button>
       <button type="button" className="btn btn-outline-primary" onClick={RemoveExtraSpace}>Remove Extra Spaces</button> 
+      <button type="button" className="btn btn-outline-primary" onClick={copyToClipboard}>Copy to Clipboard</button> 
       </div>
     </div>
     <div className="container mx-0 my-3">
